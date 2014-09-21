@@ -16,10 +16,10 @@
 ## 4. get the value of the inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
-        i <- NULL ##initialize the variable i to be NULL
+        i <- NULL ##initialize the variable i to be empty or NULL, later it will become a matrix
         set<-function(y){
                 x <<- y ## Assigns value to object R from a different environment
-                i <<- NULL ## intializes the inverse to be empty
+                i <<- NULL ## intializes the inverse to be empty 
         }
         get <- function() x ## get is a function with parameter x in a different environment
         setinverse <- function(inverse) i <<- inverse ## setinverse sets the value of the variable 
